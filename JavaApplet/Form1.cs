@@ -16,10 +16,10 @@ namespace JavaApplet
         {
             InitializeComponent();
             finished = false;
-            x1 = panel1.Width;
-            y1 = panel1.Height;
+            x1 = 640;
+            y1 = 480;
+            
             xy = (float)x1 / (float)y1;
-            g1 = panel1.CreateGraphics();
             finished = true;
         }
         class HSB
@@ -110,32 +110,39 @@ namespace JavaApplet
             initvalues();
             xzoom = (xende - xstart) / (double)x1;
             yzoom = (yende - ystart) / (double)y1;
+            mandelbrot();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            g1 = e.Graphics;
-
-            mandelbrot();
+           
         }
 
         private static bool action, rectangle, finished;
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private static float xy;
         private Image picture;
         private Graphics g1;
         private Cursor c1, c2;
         private HSB HSBcol = new HSB();
         private Pen pen;
+        Bitmap bm = new Bitmap(640, 480);
         private void mandelbrot() // calculate all points
         {
             int x, y;
             float h, b, alt = 0.0f;
 
             action = false;
+            Console.WriteLine(x1 + " " + y1);
             for (x = 0; x < x1; x += 2)
                 for (y = 0; y < y1; y++)
                 {
-                    h = pointcolour(xstart + xzoom * (double)x, ystart + yzoom * (double)y); // color value
+                    h = pointcolour(xstart + xzoom * (double)x, ystart + yzoom * (double)y); // color
                     if (h != alt)
                     {
                         b = 1.0f - h * h; // brightnes
@@ -150,16 +157,15 @@ namespace JavaApplet
                         int red = (int)(HSBcol.rChan*255);
                         int green = (int)(HSBcol.gChan*255);
                         int blue = (int)(HSBcol.bChan*255);
-
-                        pen = new Pen(Color.FromArgb(red, green, blue), 1);
-                        
+                        Color color = Color.FromArgb(red, green, blue);
+                        bm.SetPixel(x, y, color);
+                        bm.SetPixel(x+1, y, color);
                         //djm 
                         alt = h;
                     }
-                    g1.DrawLine(pen,x, y, x + 1, y);
-                    panel1.Invalidate();
                    
                 }
+            pictureBox1.Image = bm;
             action = true;
         }
         private float pointcolour(double xwert, double ywert) // color value from 0.0 to 1.0 by iterations
