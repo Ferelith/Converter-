@@ -102,6 +102,17 @@ namespace JavaApplet
         const double EY = 1.125;  // end value imaginary
         private static int x1, y1, xs, ys, xe, ye;
         private static double xstart, ystart, xende, yende, xzoom, yzoom;
+        private static float xy;
+        private Image picture;
+        private Graphics g1;
+
+        
+
+        private Cursor c1, c2;
+        private HSB HSBcol = new HSB();
+        private Pen pen;
+        Bitmap bm = new Bitmap(640, 480);
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -111,27 +122,30 @@ namespace JavaApplet
             xzoom = (xende - xstart) / (double)x1;
             yzoom = (yende - ystart) / (double)y1;
             mandelbrot();
+         
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
            
         }
-
-        private static bool action, rectangle, finished;
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public void update(Graphics g1)
         {
+            g1.DrawImage(picture, 0, 0);
+            if (rectangle)
+            {
+                if (xs < xe)
+                {
+                    if (ys < ye) g1.DrawRectangle(pen, xs, xe, (xe - xs), (ye - ys));
+                    else g1.DrawRectangle(pen, xs, ye, (xe - xs), (ys - ye));
+                }
+            }
+            else
+            {
+                if (ys < ye) g1.DrawRectangle(pen, xe, ys, (xs - xe), (ye - ys));
+                else g1.DrawRectangle(pen, xe, ye, (xs - xe), (ys - ye));
+            }
 
         }
-
-        private static float xy;
-        private Image picture;
-        private Graphics g1;
-        private Cursor c1, c2;
-        private HSB HSBcol = new HSB();
-        private Pen pen;
-        Bitmap bm = new Bitmap(640, 480);
         private void mandelbrot() // calculate all points
         {
             int x, y;
@@ -152,22 +166,25 @@ namespace JavaApplet
                                           ///g1.setColor(col);
                         //djm end
                         //djm added to convert to RGB from HSB
-                        //djm test
+                        //djm test https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.modeling.diagrams.hslcolor.aspx and use ToRGBColor
                         HSBcol.fromHSB(h, 0.8f, b);
-                        int red = (int)(HSBcol.rChan*255);
-                        int green = (int)(HSBcol.gChan*255);
-                        int blue = (int)(HSBcol.bChan*255);
+                        int red = (int)(HSBcol.rChan * 255);
+                        int green = (int)(HSBcol.gChan * 255);
+                        int blue = (int)(HSBcol.bChan * 255);
                         Color color = Color.FromArgb(red, green, blue);
                         bm.SetPixel(x, y, color);
-                        bm.SetPixel(x+1, y, color);
+                        bm.SetPixel(x + 1, y, color);
                         //djm 
                         alt = h;
                     }
-                   
+
                 }
             pictureBox1.Image = bm;
             action = true;
         }
+        private static bool action, rectangle, finished;
+       
+       
         private float pointcolour(double xwert, double ywert) // color value from 0.0 to 1.0 by iterations
         {
             double r = 0.0, i = 0.0, m = 0.0;
