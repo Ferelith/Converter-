@@ -7,16 +7,6 @@ E:\CSharp\JavaApplet\JavaApplet\obj\Debug\JavaApplet.Properties.Resources.resour
 E:\CSharp\JavaApplet\JavaApplet\obj\Debug\JavaApplet.csproj.GenerateResource.Cache
 E:\CSharp\JavaApplet\JavaApplet\obj\Debug\JavaApplet.exe
 E:\CSharp\JavaApplet\JavaApplet\obj\Debug\JavaApplet.pdb
-C:\Users\artur\Desktop\New folder\JavaApplet\bin\Debug\JavaApplet.exe.config
-C:\Users\artur\Desktop\New folder\JavaApplet\bin\Debug\JavaApplet.exe
-C:\Users\artur\Desktop\New folder\JavaApplet\bin\Debug\JavaApplet.pdb
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.csprojResolveAssemblyReference.cache
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.Form1.resources
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.Properties.Resources.resources
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.csproj.GenerateResource.Cache
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.csproj.CoreCompileInputs.cache
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.exe
-C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.pdb
 F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\bin\Debug\JavaApplet.exe.config
 F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\bin\Debug\JavaApplet.exe
 F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\bin\Debug\JavaApplet.pdb
@@ -25,3 +15,22 @@ F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\obj\Debug\JavaApple
 F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\obj\Debug\JavaApplet.csproj.GenerateResource.Cache
 F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\obj\Debug\JavaApplet.exe
 F:\Leeds Beckett 2017-2018\Software Engineering_A\JavaApplet\obj\Debug\JavaApplet.pdb
+C:\Users\artur\Desktop\New folder\JavaApplet\bin\Debug\JavaApplet.exe.config
+C:\Users\artur\Desktop\New folder\JavaApplet\bin\Debug\JavaApplet.exe
+C:\Users\artur\Desktop\New folder\JavaApplet\bin\Debug\JavaApplet.pdb
+C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.Form1.resources
+C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.Properties.Resources.resources
+C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.csproj.GenerateResource.Cache
+C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.csproj.CoreCompileInputs.cache
+C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.exe
+C:\Users\artur\Desktop\New folder\JavaApplet\obj\Debug\JavaApplet.pdb
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\bin\Debug\JavaApplet.exe.config
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\bin\Debug\JavaApplet.exe
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\bin\Debug\JavaApplet.pdb
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.Form1.resources
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.Properties.Resources.resources
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.csproj.GenerateResource.Cache
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.csproj.CoreCompileInputs.cache
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.exe
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.pdb
+C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.csprojResolveAssemblyReference.cache
