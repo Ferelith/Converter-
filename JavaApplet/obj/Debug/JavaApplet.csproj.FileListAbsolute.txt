@@ -34,3 +34,13 @@ C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.csproj.Cor
 C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.exe
 C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.pdb
 C:\Users\artur\Desktop\New folder (2)\JavaApplet\obj\Debug\JavaApplet.csprojResolveAssemblyReference.cache
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\bin\Debug\JavaApplet.exe.config
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\bin\Debug\JavaApplet.exe
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\bin\Debug\JavaApplet.pdb
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.csprojResolveAssemblyReference.cache
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.Form1.resources
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.Properties.Resources.resources
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.csproj.GenerateResource.Cache
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.csproj.CoreCompileInputs.cache
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.exe
+C:\Users\wiwo2\Desktop\JavaApplet\JavaApplet\obj\Debug\JavaApplet.pdb

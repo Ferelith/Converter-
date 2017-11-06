@@ -23,7 +23,7 @@ namespace JavaApplet
             xy = (float)x1 / (float)y1;
             finished = true;
         }
-        public struct HSBColor /* To set the colours */
+        public struct HSBColor /* Used to attach the colours */
         {
             float h;
             float s;
@@ -38,7 +38,7 @@ namespace JavaApplet
                 this.b = Math.Min(Math.Max(b, 0), 255);
             }
 
-            public HSBColor(int a, float h, float s, float b)
+            public HSBColor(int a, float h, float s, float b) // Getters and setters for colours
             {
                 this.a = a;
                 this.h = Math.Min(Math.Max(h, 0), 255);
@@ -68,7 +68,7 @@ namespace JavaApplet
                     return FromHSB(this);
                 }
             }
-            public static Color FromHSB(HSBColor hsbColor)
+            public static Color FromHSB(HSBColor hsbColor) // Used to calculate HSB colour and return as RGB
             {
                 float r = hsbColor.b;
                 float g = hsbColor.b;
@@ -122,7 +122,7 @@ namespace JavaApplet
                         b = 0;
                     }
                 }
-                return Color.FromArgb
+                return Color.FromArgb // Conversion for colours
                     (
                         hsbColor.a,
                         (int)Math.Round(Math.Min(Math.Max(r, 0), 255)),
@@ -163,11 +163,6 @@ namespace JavaApplet
 
         }
 
-        private void Form1_MouseUp_1(object sender, MouseEventArgs e)
-        {
-
-        }
-
         public void destroy() // delete all instances 
         {
             if (finished)
@@ -177,7 +172,7 @@ namespace JavaApplet
                 GC.Collect();
             }
         }
-        public void start()
+        public void start() // Start values when the program is launched
         {
             action = false;
             rectangle = false;
@@ -190,7 +185,7 @@ namespace JavaApplet
         {
         }
 
-        public void paint(Graphics g1)
+        public void paint(Graphics g1) 
         {
             update(g1);
         }
@@ -250,16 +245,18 @@ namespace JavaApplet
             g1.DrawImage(bitmap, 0, 0, x1, y1);
             g1.Dispose();
         }
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        private void Form1_MouseMove(object sender, MouseEventArgs e) // Rectangle does not draw but works on selected area with mouse.
         {
             if (action)
             {
                 xe = e.X;
                 ye = e.Y;
                 rectangle = true;
+
+                // TODO implement drawing of rectangle on the screen as second form handler.
             }
         }
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void Form1_MouseDown(object sender, MouseEventArgs e) // Zoom out
         {
             if (action)
             {
@@ -267,7 +264,7 @@ namespace JavaApplet
                 ys = e.Y;
             }
         }
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        private void Form1_MouseUp(object sender, MouseEventArgs e) // Zoom
         {
             int z, w;
         
